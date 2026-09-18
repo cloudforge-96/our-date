@@ -886,122 +886,172 @@
 
 
       <!-- ================= PAGE 7 ================= -->
+<!-- ================= PAGE 7 ================= -->
 
-      <section class="page" id="page7">
+<section class="page" id="page7">
 
-        <div class="big-heart">
-          🥹❤️
-        </div>
+  <div class="big-heart">
+    🥹❤️
+  </div>
 
-        <h2>Okay... Lover Quiz 👀</h2>
+  <h2>Okay... Lover Quiz 👀</h2>
 
-        <p>
-          Let's see how well you actually know me. 😂
-        </p>
+  <p>
+    Let's see how well you actually know me. 😂
+  </p>
 
+  <div class="quiz-question">
 
-        <!-- Question 1 -->
+    <div class="question-title">
+      1. My favourite food? 🍽️
+    </div>
 
-        <div class="quiz-question">
+    <input
+      type="text"
+      id="q1Answer"
+      placeholder="Enter your answer..."
+      autocomplete="off"
+    >
 
-          <div class="question-title">
-            1. My favourite food? 🍽️
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q1', false)"
-          >
-            🍕 Pizza
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q1', true)"
-          >
-            🌿 Drumstick
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q1', false)"
-          >
-            🍗 Chicken
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q1', false)"
-          >
-            🍔 Burger
-          </div>
-
-        </div>
+  </div>
 
 
-        <!-- Question 2 -->
+  <div class="quiz-question">
 
-        <div class="quiz-question">
+    <div class="question-title">
+      2. Where did we first meet? 📍
+    </div>
 
-          <div class="question-title">
-            2. Where did we first meet? 📍
-          </div>
+    <input
+      type="text"
+      id="q2Answer"
+      placeholder="Enter your answer..."
+      autocomplete="off"
+    >
 
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q2', false)"
-          >
-            📍 Vizag
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q2', true)"
-          >
-            💕 Kakinada
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q2', false)"
-          >
-            📍 Guntur
-          </div>
-
-          <div
-            class="option"
-            onclick="selectAnswer(this, 'q2', false)"
-          >
-            📍 Hyderabad
-          </div>
-
-        </div>
+  </div>
 
 
-        <div
-          class="error"
-          id="quizError"
-        >
-          Oops! Think again 😂💕
-        </div>
+  <div
+    class="error"
+    id="quizError"
+  >
+    Oops! Think again 😂💕
+  </div>
 
-        <div
-          class="success"
-          id="quizSuccess"
-        >
-          Okay okay... you actually know me! 🥹❤️
-        </div>
 
-        <button
-          class="next-btn"
-          onclick="quizNext()"
-          style="margin-top: 20px;"
-        >
-          NEXT →
-        </button>
+  <div
+    class="success"
+    id="quizSuccess"
+  >
+    Okay okay... you actually know me! 🥹❤️
+  </div>
 
-      </section>
 
+  <button
+    class="next-btn"
+    onclick="quizNext()"
+    style="margin-top: 20px;"
+  >
+    NEXT →
+  </button>
+
+</section>
+
+
+<!-- ================= PAGE 8 ================= -->
+
+<section class="page" id="page8">
+
+  <div id="finalQuestion">
+
+    <div class="emoji">
+      👀💕
+    </div>
+
+    <h2>
+      Okay, one last question... 👀
+    </h2>
+
+    <p>
+      How are you going to behave on our date?
+    </p>
+
+    <div class="final-options">
+
+      <div
+        class="final-option"
+        onclick="selectFinal(this)"
+      >
+        😇 Cute & innocent
+      </div>
+
+      <div
+        class="final-option"
+        onclick="selectFinal(this)"
+      >
+        😎 Cool & confident
+      </div>
+
+      <div
+        class="final-option"
+        onclick="selectFinal(this)"
+      >
+        😂 Annoy me the whole time
+      </div>
+
+      <div
+        class="final-option"
+        onclick="selectFinal(this)"
+      >
+        🥹 Just stare at me
+      </div>
+
+    </div>
+
+    <button
+      class="submit-btn"
+      onclick="finalSubmit()"
+    >
+      SUBMIT 💕
+    </button>
+
+    <div
+      class="error"
+      id="finalError"
+    >
+      Choose one first 😂💕
+    </div>
+
+  </div>
+
+
+  <div
+    class="final-message"
+    id="finalMessage"
+  >
+
+    <div class="emoji">
+      😂❤️
+    </div>
+
+    <h2>
+      Wrong answer 😂❤️
+    </h2>
+
+    <p style="font-size: 21px; margin-top: 20px;">
+      You're going to be cute anyway. 🥹💕
+    </p>
+
+    <div style="font-size: 60px; margin-top: 25px;">
+      🫶🏻💗
+    </div>
+
+  </div>
+
+</section>
+
+       
 
       <!-- ================= PAGE 8 ================= -->
 
